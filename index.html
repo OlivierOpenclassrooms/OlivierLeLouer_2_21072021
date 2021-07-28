@@ -3,14 +3,17 @@
     <head>
         <meta charset="utf-8" />
         <title>Reservia</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://kit.fontawesome.com/153d2c7264.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <!--HEADER-->
         <header>
-            <img src= images/logo/reservia@3x.png alt= "logo de Reservia">
             <nav>  
+                <img src= images/logo/reservia@3x.png alt= "logo de Reservia">
                 <ul>
-                    <li>Hébergements</li>
-                    <li>Activités</li>
+                    <li><a href= "#hébergements">Hébergements</a></li>
+                    <li><a href= "#activités">Activités</a></li>
                     <li>S'inscrire</li>
                 </ul>
             </nav>
@@ -18,9 +21,10 @@
         <main>
             <!--Section de recherche et filtres des hébergements-->
             <section>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h1 id= "hébergements">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                 <div>
+                    <i class="fas fa-map-marker-alt"></i>
                     <input type="search" />
                     <input type="submit" value="Rechercher" />
                 </div>
@@ -28,15 +32,19 @@
                 <div>
                     <h2>Filtres</h2>
                     <div>
+                        <i class="fas fa-money-bill-wave"></i>
                         <h2>Economique</h2>
                     </div>
                     <div>
+                        <i class="fas fa-child"></i>
                         <h2>Familial</h2>
                     </div>
                     <div>
+                        <i class="fas fa-heart"></i>
                         <h2>Romantique</h2>
                     </div>
                     <div>
+                        <i class="fas fa-dog"></i>
                         <h2>Animaux autorisés</h2>
                     </div>
                 </div>
@@ -52,7 +60,7 @@
                         <img src= images\hebergements\4_small\cannebiere.jpg alt= "Auberge la Cannebière">
                         <div>
                             <h3>Auberge la Cannebière</h3>
-                            <p>Nuit à partir <strong>25€</strong></p>
+                            <p>Nuit à partir <em>25€</em></p>
                             <!--mettre les étoiles-->
                         </div>
                     </div>
@@ -84,7 +92,7 @@
                         <img src= images\hebergements\4_small\le_panier.jpg alt= "Auberge Le Panier">
                         <div>
                             <h3>Auberge Le Panier</h3>
-                            <p>Nuit à partir de <strong>23€</strong></p>
+                            <p>Nuit à partir de <em>23€</em></p>
                             <!--mettre les étoiles-->
                         </div>
                     </div>
@@ -102,7 +110,7 @@
                 <div>
                     <div>
                         <h1>Les plus populaires</h1>
-                        <!--Mettre une icone-->
+                        <i class="fas fa-chart-line"></i>
                     </div>
                     <div class= "images">
                         <img src= images\hebergements\4_small\hotel_le_soleil_matin.jpg alt=>
@@ -132,7 +140,7 @@
             </section>
             <!--Section des activités-->
             <section>
-                <h1>Activité à Marseille</h1>
+                <h1 id= "activités">Activité à Marseille</h1>
                 <div class= "grandesimages">
                     <img src= images\activites\2_large\Vieux_Port.jpg alt= "Vieux Port">
                     <h3>Vieux Port</h3>
@@ -163,6 +171,7 @@
                 </div>
             </section>
         </main>
+        <!--FOOTER-->
         <footer>
             <div>
                 <h3>A propos</h3>

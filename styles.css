@@ -20,7 +20,17 @@ nav img {
 
 nav li {
     margin: 0 10px 0 20px;
+    color: #0065FC;
 }
+
+nav li a {
+    text-decoration: none;
+}
+
+a.nounderline:link 
+{ 
+ text-decoration:none; 
+} 
 
 a:hover {
     text-decoration: overline;
@@ -36,22 +46,42 @@ h2 {
     font-size: 15px;
 }
 
-i {
-    font-size: 20px;
-    color:#0065FC;
+#recherche i {
+    border: 15px solid;
+    border-radius: 10px 0 0 10px;
+    border-color: #F2F2F2;
+    font-size: 12px;
 }
 
-.icones {
+/*Filtres*/
+#filtres {
     display: flex;
     align-items: center;
 }
 
-.icones div {
+#filtres div {
     margin: 0 20px 0 20px;
 }
 
-.icones div h2 {
+#filtres div i {
+    font-size: 20px;
+    color:#0065FC;
+    border: 10px solid;
+    border-radius: 50%;
+    border-color: #DEEBFF;
+    background-color: #DEEBFF;
+}
+
+#filtres div h2 {
     margin: 0 20px 0 30px;
+}
+
+#information {
+    display: flex;
+}
+
+#information i {
+    color:#0065FC;
 }
 
 /*FOOTER*/

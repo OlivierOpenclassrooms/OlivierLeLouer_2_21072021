@@ -1,3 +1,8 @@
+/*HEADER*/
+body {
+    font-family: "Raleway", sans-serif;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -15,4 +20,47 @@ nav img {
 
 nav li {
     margin: 0 10px 0 20px;
+}
+
+a:hover {
+    text-decoration: overline;
+    color: #0065FC;
+}
+
+a:visited {
+    color: #0065FC;
+}
+
+/*Section recherche*/
+h2 {
+    font-size: 15px;
+}
+
+i {
+    font-size: 20px;
+    color:#0065FC;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+}
+
+.icones div {
+    margin: 0 20px 0 20px;
+}
+
+.icones div h2 {
+    margin: 0 20px 0 30px;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div ul {
+    list-style: none;
 }

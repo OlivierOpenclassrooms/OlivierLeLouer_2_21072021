@@ -1,8 +1,7 @@
-/*HEADER*/
 body {
     font-family: "Raleway", sans-serif;
 }
-
+/*HEADER*/
 nav {
     display: flex;
     align-items: center;
@@ -27,18 +26,13 @@ nav li a {
     text-decoration: none;
 }
 
-a.nounderline:link 
-{ 
- text-decoration:none; 
-} 
-
 a:hover {
     text-decoration: overline;
     color: #0065FC;
 }
 
 a:visited {
-    color: #0065FC;
+    color: black;
 }
 
 /*Section recherche*/
@@ -51,25 +45,41 @@ h2 {
     border-radius: 10px 0 0 10px;
     border-color: #F2F2F2;
     font-size: 12px;
+    float: left;
+}
+
+#recherche input {
+    font-size: 20px;
+    background-color: #0065FC;
+    float: left;
+    color: white;
 }
 
 /*Filtres*/
 #filtres {
     display: flex;
     align-items: center;
+    margin: 30px 20px 20px 10px;
 }
 
 #filtres div {
-    margin: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    border: black solid 1px;
+    border-radius: 20px 20px 20px 20px;
+    border-left-color: transparent;
+    margin-right: 20px;
+    height: 30px;
 }
 
 #filtres div i {
-    font-size: 20px;
+    font-size: 20px 20px 20px 20px;
     color:#0065FC;
     border: 10px solid;
     border-radius: 50%;
     border-color: #DEEBFF;
     background-color: #DEEBFF;
+    float: left;
 }
 
 #filtres div h2 {
@@ -84,13 +94,62 @@ h2 {
     color:#0065FC;
 }
 
+/*Hébergements*/
+
+#presentation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    width : 200px; 
+    height : 200px;
+    border: white solid;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/*Populaires*/
+
+#populaires {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/*activités*/
+
+#activités {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grandesimages {
+    display: flex;
+    flex-direction: column;
+    width : 300px; 
+    height : 300px;
+    border: white solid;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.moyimages {
+    display: flex;
+    flex-direction: column;
+    width : 300px;
+    height : 300px;
+    border: white solid;
+    border-radius: 20px 20px 20px 20px;
+}
+
 /*FOOTER*/
 footer {
+    margin: 0 0 20px 0;
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
-}
-
-footer div ul {
-    list-style: none;
+    align-items: flex-start;
 }

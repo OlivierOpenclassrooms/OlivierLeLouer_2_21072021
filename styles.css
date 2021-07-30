@@ -1,5 +1,7 @@
 body {
     font-family: "Raleway", sans-serif;
+    width: 1500px;
+    margin: auto;
 }
 /*HEADER*/
 nav {
@@ -53,6 +55,7 @@ h2 {
     background-color: #0065FC;
     float: left;
     color: white;
+    height: 43px;
 }
 
 /*Filtres*/
@@ -67,6 +70,7 @@ h2 {
     align-items: center;
     border: black solid 1px;
     border-radius: 20px 20px 20px 20px;
+    border-color: #DEEBFF ;
     border-left-color: transparent;
     margin-right: 20px;
     height: 30px;
@@ -83,15 +87,23 @@ h2 {
 }
 
 #filtres div h2 {
-    margin: 0 20px 0 30px;
+    margin: 0 15px 0 10px;
 }
 
 #information {
     display: flex;
+    align-items: center;
 }
 
 #information i {
     color:#0065FC;
+}
+
+/*Section hébergements et populaires*/
+
+#propositions {
+    display: flex;
+    flex-direction: row;
 }
 
 /*Hébergements*/
@@ -100,6 +112,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 1000px;
 }
 
 .images {
@@ -116,7 +129,22 @@ h2 {
 #populaires {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#entete {
+    display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.imagescote {
+    display: flex;
+    flex-direction: row;
+    width : 200px; 
+    height : 200px;
+    border: white solid;
+    border-radius: 20px 20px 20px 20px;
 }
 
 /*activités*/
@@ -151,5 +179,4 @@ footer {
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
 }

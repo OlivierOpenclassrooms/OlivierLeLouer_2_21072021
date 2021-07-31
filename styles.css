@@ -1,11 +1,22 @@
 body {
     font-family: "Raleway", sans-serif;
-    width: 1500px;
+    width:auto;
     margin: auto;
 }
+
+h3 {
+    margin-bottom: 25px;
+}
+
 /*HEADER*/
+header {
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+
 nav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between; 
 }
@@ -24,18 +35,27 @@ nav li {
     color: #0065FC;
 }
 
+
 nav li a {
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: overline;
-    color: #0065FC;
 }
 
 a:visited {
     color: black;
 }
+
+a:hover {
+    border-top: #0065FC solid;
+    border-width: 2px;
+    padding-top: 38px;
+    color: #0065FC;
+}
+
+a:active {
+    color: #0065FC;
+}
+
+
 
 /*Section recherche*/
 h2 {
@@ -50,7 +70,14 @@ h2 {
     float: left;
 }
 
-#recherche input {
+#Barre {
+    font-size: 20px;
+    float: left;
+    color: black;
+    height: 43px;
+}
+
+#Bouton {
     font-size: 20px;
     background-color: #0065FC;
     float: left;
@@ -58,9 +85,12 @@ h2 {
     height: 43px;
 }
 
+
+
 /*Filtres*/
 #filtres {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 30px 20px 20px 10px;
 }
@@ -103,6 +133,7 @@ h2 {
 
 #propositions {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -178,5 +209,12 @@ footer {
     margin: 0 0 20px 0;
     background-color: #F2F2F2;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer div {
+    margin-right: 15%;
+    margin-left: 3%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }

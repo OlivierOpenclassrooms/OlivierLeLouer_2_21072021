@@ -111,6 +111,10 @@ h2 {
     border-radius: 0 10px 7px 0;
 }
 
+#bouton:hover {
+    
+}
+
 
 /*Filtres*/
 
@@ -179,6 +183,7 @@ a.bouton2.i:hover {
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+    
 }
 
 /*Hébergements*/
@@ -217,11 +222,16 @@ a.images {
 
 a.images img {
     width: 100%;
-    max-height: 100px;
-    height: 100%;
+    height: 70%;
+    max-height: 135px;
     border: white solid;
     border-radius: 20px 20px 0 0;
-    box-sizing: border-box;
+    object-fit: cover;
+}
+
+#presentation h3 a {
+    text-decoration: none;
+    color: black;
 }
 
 /*Populaires*/
@@ -263,11 +273,14 @@ a.imagescote {
 
 a.imagescote img {
     width: 100%;
-    max-height: 150px;
-    height: 100%;
+    min-width: 150px;
+    max-width: 150px;
+    min-height : 170px; 
+    max-height: 170px;
     border: white solid;
     border-radius: 20px 0 0 20px;
     float: left;
+    object-fit: cover;
 }
 
 /*Activités*/
@@ -276,6 +289,8 @@ a.imagescote img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    height: auto;
+    width: auto;
 }
 
 a.grandesimages {
@@ -284,18 +299,28 @@ a.grandesimages {
     flex-wrap: wrap;
     border: white solid;
     background-color: white;
-    height: auto;
     border-radius: 20px 20px 20px 20px;
     text-decoration: none;
     color: black;
+    max-width: 300px;
+    min-height: 350px;
+    max-height: 350px;
 }
 
 a.grandesimages img {
     width: 100%;
-    max-height: 100px;
+    max-height: 500px;
     height: 100%;
     border: white solid;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+#activités div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 a.moyimages {
@@ -303,19 +328,27 @@ a.moyimages {
     flex-direction: row;
     flex-wrap: wrap;
 	height: auto;
+    justify-content: space-between;
     border: white solid;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     text-decoration: none;
     color: black;
+    width: 100%;
+    max-width: 350px;
+    min-width: 350px;
+    min-height: 200px;
+    max-height: 200px;
 }
 
 a.moyimages img {
     width: 100%;
-    max-height: 100px;
+    min-width: 150px;
+    max-height: 150px;
     height: 100%;
     border: white solid;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
 /*FOOTER*/

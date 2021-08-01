@@ -1,6 +1,5 @@
 body {
     font-family: "Raleway", sans-serif;
-    width: 100%;
     height: auto;
     margin: auto;
 }
@@ -34,15 +33,11 @@ nav img {
 
 nav li {
     margin: 0 10px 0 20px;
-    color: #0065FC;
-    font-size: bold;
 }
 
-
-nav li a {
+a.bouton1 {
     text-decoration: none;
 }
-
 
 a.bouton1:visited {
     color: black;
@@ -56,6 +51,12 @@ a.bouton1:hover {
 }
 
 a.bouton1:active {
+    color: #0065FC;
+}
+
+a.inscrire {
+    text-decoration: none;
+    font-weight: bold;
     color: #0065FC;
 }
 
@@ -120,8 +121,7 @@ h2 {
     margin: 30px 20px 20px 10px;
 }
 
-
-#filtres div {
+a.bouton2 {
     display: flex;
     align-items: center;
     border: black solid 1px;
@@ -130,9 +130,21 @@ h2 {
     border-left-color: transparent;
     margin-right: 20px;
     height: 35px;
+    text-decoration: none;
+    color: black;
 }
 
-#filtres div i {
+a.bouton2:hover {
+    background-color: #0065FC;
+    color: white;
+}
+
+a.bouton2.i:hover {
+    background-color: #0065FC;
+    color: white;
+}
+
+#filtres i {
     max-width: 40%;
 	height: auto;
     color:#0065FC;
@@ -143,7 +155,7 @@ h2 {
     float: left;
 }
 
-#filtres div h2 {
+#filtres h2 {
     margin: 0 15px 0 10px;
 }
 
@@ -154,6 +166,10 @@ h2 {
 
 #information i {
     color:#0065FC;
+    border: #DEEBFF 10px solid;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
 }
 
 /*Section hébergements et populaires*/
@@ -184,7 +200,7 @@ h2 {
     justify-content: center;
 }
 
-.images {
+a.images {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -195,14 +211,17 @@ h2 {
     height:auto;
     max-width: 300px;
     margin: 2%;
+    text-decoration: none;
+    color: black;
 }
 
-.images img {
+a.images img {
     width: 100%;
     max-height: 100px;
     height: 100%;
     border: white solid;
     border-radius: 20px 20px 0 0;
+    box-sizing: border-box;
 }
 
 /*Populaires*/
@@ -229,7 +248,7 @@ h2 {
     margin: 1%;
 }
 
-.imagescote {
+a.imagescote {
     display: flex;
     flex-direction: row;
     border: white solid;
@@ -238,10 +257,11 @@ h2 {
     width: 100%;
     height: auto;
     margin-bottom: 10%;
-    
+    text-decoration: none;
+    color: black;
 }
 
-.imagescote img {
+a.imagescote img {
     width: 100%;
     max-height: 150px;
     height: 100%;
@@ -258,7 +278,7 @@ h2 {
     flex-direction: row;
 }
 
-.grandesimages {
+a.grandesimages {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -266,9 +286,11 @@ h2 {
     background-color: white;
     height: auto;
     border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: black;
 }
 
-.grandesimages img {
+a.grandesimages img {
     width: 100%;
     max-height: 100px;
     height: 100%;
@@ -276,7 +298,7 @@ h2 {
     border-radius: 20px 20px 0 0;
 }
 
-.moyimages {
+a.moyimages {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -284,9 +306,11 @@ h2 {
     border: white solid;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: black;
 }
 
-.moyimages img {
+a.moyimages img {
     width: 100%;
     max-height: 100px;
     height: 100%;
@@ -308,4 +332,9 @@ footer div {
     margin-left: 3%;
     margin-top: 1.5%;
     margin-bottom: 1.5%;
+}
+
+footer div p a {
+    text-decoration: none;
+    color: black;
 }

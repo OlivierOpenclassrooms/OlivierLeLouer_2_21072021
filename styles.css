@@ -1,7 +1,14 @@
 body {
     font-family: "Raleway", sans-serif;
-    height: auto;
-    margin: auto;
+}
+
+h1 {
+    margin-bottom: 0;
+    margin-top: 60px;
+}
+
+h2 {
+    font-size: 15px;
 }
 
 h3 {
@@ -11,6 +18,8 @@ h3 {
 /*HEADER*/
 
 header {
+    padding-right: 50px;
+    padding-left: 50px;
     margin-bottom: 3%;
     margin-top: 1%;
 }
@@ -18,6 +27,7 @@ header {
 nav {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between; 
 }
@@ -67,8 +77,17 @@ a.inscrire:visited {
 
 /*Section recherche*/
 
-h2 {
-    font-size: 15px;
+main {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
+#recherche {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;  
+    flex-wrap: nowrap;
 }
 
 #recherche i {
@@ -98,7 +117,6 @@ h2 {
     border: 15px solid;
     border-color: #0065FC;
     border-radius: 0 10px 10px 0;
-    justify-content: center;
     border: #0065FC;
     font-weight: bold;
     font-size: 14px;
@@ -116,13 +134,11 @@ h2 {
 #filtres {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    margin: 30px 20px 20px 10px;
 }
 
 #filtres i {
-    max-width: 40%;
-	height: auto;
     color:#0065FC;
     border: 10px solid;
     border-radius: 50%;
@@ -141,10 +157,10 @@ a.bouton2 {
     border-radius: 20px 20px 20px 20px;
     border-color: #DEEBFF ;
     border-left-color: transparent;
-    margin-right: 20px;
     height: 35px;
     text-decoration: none;
     color: black;
+    margin-left: 20px;
 }
 
 a.bouton2:hover {
@@ -160,6 +176,8 @@ a.bouton2.i:hover {
 #information {
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 #information i {
@@ -176,8 +194,10 @@ a.bouton2.i:hover {
 #propositions {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     flex-direction: row;
     width: 100%;
+    align-items: center;
 }
 
 /*Hébergements*/
@@ -186,17 +206,30 @@ a.bouton2.i:hover {
     display:flex;
     flex-wrap: wrap;
     background-color:#F2F2F2;
-    width: 60%;
+    width: 65%;
     height: auto;
     border-radius: 20px 20px 20px 20px;
-    margin-right: 2%;
+    min-width: 350px;
+    height: auto;
+}
+
+#presentation h1 {
+    margin-left: 7%;
+    margin-bottom: 1%;
+}
+
+#presentation h3 {
+    margin-left: 7%;
+    margin-bottom: 5%;
 }
 
 #vignettes {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
+
 }
 
 a.images {
@@ -207,11 +240,13 @@ a.images {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     width: 100%;
-    height:auto;
+    min-width: 300px;
+    min-height: 270px;
     max-width: 300px;
-    margin: 2%;
     text-decoration: none;
     color: black;
+    margin: 2%;
+    box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 a.images img {
@@ -231,6 +266,7 @@ a.images img {
 .etoiles {
     display: flex;
     flex-direction: row;
+    
 }
 
 .etoilespleines {
@@ -238,7 +274,8 @@ a.images img {
 }
 
 .etoilesvides {
-    color: #F2F2F2;
+    color: rgb(194, 193, 193);
+    margin-left: 3px;
 }
 
 /*Populaires*/
@@ -248,21 +285,17 @@ a.images img {
     flex-wrap: wrap;
     flex-direction: column;
     background-color:#F2F2F2;
-    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
     border-radius: 20px 20px 20px 20px;
-    padding: 1.5%;
-    justify-content: center;
-    height: auto;
-    min-width: 250px;
-    
+    min-width: 350px;
 }
 
 #entete {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1%;
+
 }
 
 a.imagescote {
@@ -271,15 +304,21 @@ a.imagescote {
     border: white solid;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    width: 100%;
     height: auto;
-    margin-bottom: 10%;
     text-decoration: none;
     color: black;
+    min-width: 250px;
+    max-width: 380px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-bottom: 9%;
+}
+
+a.imagescote div {
+
 }
 
 a.imagescote img {
-    width: 100%;
+    width: 100%; 
     min-width: 150px;
     max-width: 150px;
     min-height : 170px; 
@@ -296,36 +335,35 @@ a.imagescote img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 100%;
-    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 4%;
 }
 
-.grandesimages a {
+#activités h3 {
+    margin-left: 20px;
+}
+
+a.grandesimages {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: white solid;
-    background-color: white;
     border-radius: 20px 20px 20px 20px;
     text-decoration: none;
     color: black;
-    max-width: 300px;
-    min-height: 50%;
-    max-height: 50%;
+    max-height: auto;
+    max-width: 400px;
     object-fit: cover;
-    margin: 10px 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.grandesimages a img {
+a.grandesimages img {
     width: 100%;
-    max-height: 500px;
-    height: 100%;
-    border: white solid;
+    height: 420px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
-#activités div {
+.actimages {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -334,26 +372,20 @@ a.imagescote img {
 
 a.moyimages {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-	height: auto;
-    justify-content: space-between;
-    border: white solid;
-    background-color: white;
+    flex-direction: column;
     border-radius: 20px 20px 20px 20px;
     text-decoration: none;
     color: black;
-    width: 100%;
-    max-width: 350px;
-    min-width: 350px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 a.moyimages img {
     width: 100%;
-    min-width: 150px;
+    min-width: 350px;
+    width: 400px;
     max-height: 150px;
     height: 100%;
-    border: white solid;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
@@ -368,8 +400,9 @@ footer {
 }
 
 footer div {
-    margin-right: 15%;
-    margin-left: 3%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 10%;
     margin-top: 1.5%;
     margin-bottom: 1.5%;
 }

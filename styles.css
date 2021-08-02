@@ -111,11 +111,6 @@ h2 {
     border-radius: 0 10px 7px 0;
 }
 
-#bouton:hover {
-    
-}
-
-
 /*Filtres*/
 
 #filtres {
@@ -123,6 +118,20 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     margin: 30px 20px 20px 10px;
+}
+
+#filtres i {
+    max-width: 40%;
+	height: auto;
+    color:#0065FC;
+    border: 10px solid;
+    border-radius: 50%;
+    border-color: #DEEBFF;
+    background-color: #DEEBFF;
+}
+
+#filtres h2 {
+    margin: 0 15px 0 10px;
 }
 
 a.bouton2 {
@@ -148,31 +157,17 @@ a.bouton2.i:hover {
     color: white;
 }
 
-#filtres i {
-    max-width: 40%;
-	height: auto;
-    color:#0065FC;
-    border: 10px solid;
-    border-radius: 50%;
-    border-color: #DEEBFF;
-    background-color: #DEEBFF;
-    float: left;
-}
-
-#filtres h2 {
-    margin: 0 15px 0 10px;
-}
-
 #information {
     display: flex;
     align-items: center;
 }
 
 #information i {
-    color:#0065FC;
-    border: #DEEBFF 10px solid;
+    color: #0065FC;
+    border: 10px solid;
+    border-color: #F2F2F2;
+    background-color: #DEEBFF;
     border-radius: 50%;
-    background-color: white;
     margin-right: 10px;
 }
 
@@ -183,7 +178,6 @@ a.bouton2.i:hover {
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    
 }
 
 /*Hébergements*/
@@ -232,6 +226,19 @@ a.images img {
 #presentation h3 a {
     text-decoration: none;
     color: black;
+}
+ 
+.etoiles {
+    display: flex;
+    flex-direction: row;
+}
+
+.etoilespleines {
+    color: #0065FC;
+}
+
+.etoilesvides {
+    color: #F2F2F2;
 }
 
 /*Populaires*/
@@ -289,11 +296,11 @@ a.imagescote img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
 }
 
-a.grandesimages {
+.grandesimages a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -303,11 +310,13 @@ a.grandesimages {
     text-decoration: none;
     color: black;
     max-width: 300px;
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 50%;
+    max-height: 50%;
+    object-fit: cover;
+    margin: 10px 10px;
 }
 
-a.grandesimages img {
+.grandesimages a img {
     width: 100%;
     max-height: 500px;
     height: 100%;
@@ -337,8 +346,6 @@ a.moyimages {
     width: 100%;
     max-width: 350px;
     min-width: 350px;
-    min-height: 200px;
-    max-height: 200px;
 }
 
 a.moyimages img {
@@ -354,7 +361,7 @@ a.moyimages img {
 /*FOOTER*/
 
 footer {
-    margin: 0 0 20px 0;
+    margin: 10px 0 20px 0;
     background-color: #F2F2F2;
     display: flex;
     flex-wrap: wrap;

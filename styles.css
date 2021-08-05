@@ -182,7 +182,7 @@ a.bouton2.i:hover {
 
 #information i {
     color: #0065FC;
-    border: 10px solid;
+    border: 15px solid;
     border-color: #F2F2F2;
     background-color: #DEEBFF;
     border-radius: 50%;
@@ -348,7 +348,6 @@ a.imagescote {
 
 
 a.imagescote img {
-    width: 100%; 
     min-width: 150px;
     max-width: 150px;
     min-height : 170px; 
@@ -449,3 +448,121 @@ footer div p a {
     color: black;
 }
 
+/*************************
+VERSION MOBILE
+*************************/
+
+@media screen and (max-width: 1024px)
+{
+    /**Filtres**/
+
+    #filtres {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #filtres h2 {
+        margin-bottom: 15px;
+    }
+
+    a.bouton2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    /*Section hébergements et populaires*/
+
+    #propositions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    /**Hébergements**/
+
+    #presentation {
+        border-radius: 0 0 0 0;
+        border: 0;
+        background-color: white;
+        width: 100%;
+    }
+
+    #presentation h1 {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    #presentation h3 {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    
+    #vignettes {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    a.images {
+        height: 236px;
+        max-width: 350px;
+        width: 350px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    a.images img {
+        width: 100%;
+        height: 100%;
+        border: white solid;
+        border-radius: 20px 20px 0 0;
+    }
+
+    /*Populaires*/
+
+    #populaires {
+        border-radius: 0 0 0 0;
+    }
+
+    #entete {
+        margin-left: 0;
+    }
+
+    #popmobile {
+        margin-bottom: 20px;
+    }
+
+    /**Activités**/
+
+    a.grandesimages {
+        height: 100%;
+        width: 350px;
+        height: 236px;
+        margin-bottom: 20px;
+    }
+
+    a.grandesimages img {
+        width: 100%;
+        height: 170px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+
+    a.moyimages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    a.moyimages img {
+        width: 100%;
+        width: 350px;
+        max-height: 150px;
+        height: 100%;
+}

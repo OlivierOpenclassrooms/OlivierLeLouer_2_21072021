@@ -102,7 +102,7 @@ main {
     font-size: 20px;
     float: left;
     color: black;
-    height: 43px;
+    height: 46px;
     border: #F2F2F2 solid;
     border-width: 1px;
     outline: none;
@@ -112,7 +112,7 @@ main {
     background-color: #0065FC;
     float: left;
     color: white;
-    height: 43px;
+    height: 46px;
     width: 100px;
     border: 15px solid;
     border-color: #0065FC;
@@ -139,6 +139,7 @@ main {
 }
 
 #filtres i {
+    margin-left: -3px;
     color:#0065FC;
     border: 10px solid;
     border-radius: 50%;
@@ -452,7 +453,7 @@ footer div p a {
 VERSION MOBILE
 *************************/
 
-@media screen and (max-width: 1024px)
+@media all and (max-device-width: 480px)
 {
     /**Filtres**/
 
@@ -540,15 +541,15 @@ VERSION MOBILE
     /**Activités**/
 
     a.grandesimages {
-        height: 100%;
+        min-width: 350px;
         width: 350px;
-        height: 236px;
+        height: 215px;
         margin-bottom: 20px;
     }
 
     a.grandesimages img {
         width: 100%;
-        height: 170px;
+        height: 150px;
         border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
@@ -565,4 +566,13 @@ VERSION MOBILE
         width: 350px;
         max-height: 150px;
         height: 100%;
+    }
+
+    /*FOOTER*/
+    
+    footer {
+        min-width: 480px;
+        margin-left: -10px;
+    }
+    
 }

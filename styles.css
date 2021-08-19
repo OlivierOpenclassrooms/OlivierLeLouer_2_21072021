@@ -149,10 +149,18 @@ main {
     background-color: #DEEBFF;
 }
 
+#filtres p {
+    font-weight: bolder;
+}
+
+#filtres div {
+    display: flex;
+    align-items: center;
+}
+
 #filtres h2 {
     margin: 0 15px 0 10px;
 }
-
 a.bouton2 {
     display: flex;
     align-items: center;
@@ -493,11 +501,6 @@ VERSION MOBILE
         max-width: 100%;
     }
 
-    nav li {
-        display: flex;
-        align-items:flex-start ;
-    }
-
     a.bouton1 {
         display: flex;
         flex-direction: row;
@@ -526,6 +529,10 @@ VERSION MOBILE
         flex-wrap: nowrap;
     }
 
+    #barre {
+        width: 60%;
+    }
+
     /**FILTRES MOBILE**/
 
     #titre {
@@ -539,14 +546,17 @@ VERSION MOBILE
         align-items: flex-start;
     }
 
-
-    a.bouton2 {
-        display: flex;
-        flex-wrap: wrap;
+    #filtres div {
+        min-width: 100%;
+        max-width: 100%;
         flex-direction: row;
-        justify-content: center;
-        margin-left: 0;
-        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    a.bouton2{
+        margin-bottom: 3%;
+        margin-left: 5px;
+        
     }
 
     #information {
@@ -626,10 +636,6 @@ VERSION MOBILE
         margin-left: ;
     }
 
-    #entete h1 {
-        
-    }
-
     #popmobile {
         margin-bottom: 5%;
         min-width: 90%;
@@ -693,7 +699,7 @@ VERSION MOBILE
     a.moyimages {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
         margin-bottom: 5%;
         max-width: 90%;
         min-height: 230px;

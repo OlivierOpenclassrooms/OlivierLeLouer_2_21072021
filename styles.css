@@ -325,6 +325,7 @@ a.images img {
     margin-top: -4%;
     min-height: 92px;
     position: relative;
+    width: 60%;
 }
 
 .descriptionpop p {
@@ -332,16 +333,16 @@ a.images img {
 }
 
 #entete {
+    min-width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     align-self: flex-start;
-    margin-left: 10%;
-    margin-right: 10%;
+    justify-content: space-around;
 }
 
 #entete i {
-    margin-top: 67px;
-    margin-left: 
+    margin-top: 68px;
 }
 
 
@@ -362,8 +363,8 @@ a.imagescote {
 
 
 a.imagescote img {
-    min-width: 150px;
-    max-width: 150px;
+    min-width: 40%;
+    max-width: 40%;
     min-height : 170px; 
     max-height: 170px;
     border: white solid;
@@ -490,7 +491,6 @@ VERSION MOBILE
 
     nav img {
         max-width: 50%;
-        ;
     }
 
     nav ul {
@@ -502,8 +502,6 @@ VERSION MOBILE
     }
 
     a.bouton1 {
-        display: flex;
-        flex-direction: row;
         justify-content:space-between;
         min-width: 100%;
         max-width: 100%;
@@ -618,8 +616,6 @@ VERSION MOBILE
 
     /*Populaires MOBILE*/
 
-
-
     #populaires {
         border-radius: 0 0 0 0;
         min-width: 100%;
@@ -627,13 +623,10 @@ VERSION MOBILE
     }
 
     #entete {
-        margin-left: 5%;
+        min-width: 100%;
         max-width: 100%;
-        justify-content: flex-end;
-    }
-
-    #entete i {
-        margin-left: ;
+        justify-content: space-around;
+        margin: 0;
     }
 
     #popmobile {
@@ -646,8 +639,8 @@ VERSION MOBILE
         min-width: 100%;
         max-width: 100%;
         margin-left: 0px;
-        min-height: 224px;
-        max-height: 224px;
+        min-height: 180px;
+        max-height: 180px;
     }
 
     a.imagescote img {

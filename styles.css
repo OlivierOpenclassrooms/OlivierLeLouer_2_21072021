@@ -81,6 +81,7 @@ a.inscrire:visited {
 main {
     padding-right: 50px;
     padding-left: 50px;
+    object-fit: contain;
 }
 
 
@@ -95,6 +96,7 @@ main {
     border: 15px solid;
     border-radius: 10px 0 0 10px;
     border-color: #F2F2F2;
+    background-color: #F2F2F2;
     float: left;
 }
 
@@ -324,12 +326,16 @@ a.images img {
 #entete {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     align-self: flex-start;
     margin-left: 10%;
     margin-right: 10%;
 }
+
+#entete i {
+    margin-top: 67px;
+    margin-left: 
+}
+
 
 a.imagescote {
     display: flex;
@@ -343,8 +349,7 @@ a.imagescote {
     max-width: 350px;
     box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     margin-top: 8%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-bottom: 5%;
 }
 
 
@@ -455,17 +460,85 @@ VERSION MOBILE
 
 @media all and (max-device-width: 480px)
 {
-    /**Filtres**/
+
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*HEADER MOBILE*/
+
+    header {
+        padding-right: 0;
+        padding-left: 0;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    nav {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    nav img {
+        max-width: 50%;
+        ;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    nav li {
+        display: flex;
+        align-items:flex-start ;
+    }
+
+    a.bouton1 {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        min-width: 100%;
+        max-width: 100%;
+
+    }
+
+    a.bouton1:hover {
+        border-bottom: #0065FC solid;
+        border-width: 2px;
+        padding-top: 30px;
+        color: #0065FC;
+    }
+
+    main {
+        padding-left: 0;
+        padding-right: 0px;
+        width : 100%;
+    }
+
+    #recherche {
+        max-width: 100%;
+        display: flex;  
+        flex-wrap: nowrap;
+    }
+
+    /**FILTRES MOBILE**/
+
+    #titre {
+        min-width: 100%;
+    }
 
     #filtres {
         display: flex;
+        min-width: 100%;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    #filtres h2 {
-        margin-bottom: 15px;
-    }
 
     a.bouton2 {
         display: flex;
@@ -476,22 +549,30 @@ VERSION MOBILE
         margin-bottom: 10px;
     }
 
-    /*Section hébergements et populaires*/
+    #information {
+        min-width: 100%;
+    }
+
+    /*Section hébergements et populaires MOBILE*/
 
     #propositions {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         flex-direction: column-reverse;
     }
 
-    /**Hébergements**/
+    /**Hébergements MOBILE**/
 
     #presentation {
         border-radius: 0 0 0 0;
         border: 0;
         background-color: white;
-        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     #presentation h1 {
@@ -505,14 +586,15 @@ VERSION MOBILE
     }
     
     #vignettes {
-        align-items: flex-start;
-        justify-content: flex-start;
+        max-width: 90%;
+        min-width: 90%;
+        height: auto;
     }
 
     a.images {
-        height: 236px;
-        max-width: 350px;
-        width: 350px;
+        height: auto;
+        max-width: 100%;
+        min-width: 100%;
         margin: 0;
         margin-bottom: 20px;
     }
@@ -524,54 +606,108 @@ VERSION MOBILE
         border-radius: 20px 20px 0 0;
     }
 
-    /*Populaires*/
+    /*Populaires MOBILE*/
+
+
 
     #populaires {
         border-radius: 0 0 0 0;
+        min-width: 100%;
+        max-width: 100%;
     }
 
     #entete {
-        margin-left: 0;
+        margin-left: 5%;
+        max-width: 100%;
+        justify-content: flex-end;
+    }
+
+    #entete i {
+        margin-left: ;
+    }
+
+    #entete h1 {
+        
     }
 
     #popmobile {
-        margin-bottom: 20px;
+        margin-bottom: 5%;
+        min-width: 90%;
+        max-width: 90%;
     }
 
-    /**Activités**/
+    a.imagescote {
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0px;
+        min-height: 224px;
+        max-height: 224px;
+    }
+
+    a.imagescote img {
+        max-height: 100%;
+        max-width: 5%;
+    }
+
+    .descriptionpop {
+        max-width: 100%;
+        margin-left: 3%;
+    }
+
+    /*Activités MOBILE*/
+
+    #sectionactivités {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    #sectionactivités h1 {
+        margin-left: 13px;
+    }
+
+    #activités {
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+    }
 
     a.grandesimages {
-        min-width: 350px;
-        width: 350px;
-        height: 215px;
-        margin-bottom: 20px;
+        width: 90%;
+        min-height: 230px;
+        max-height: 230px;
+        margin-bottom: 5%;
     }
 
     a.grandesimages img {
         width: 100%;
-        height: 150px;
+        max-height: 160px;
+        height: 100%;
         border-radius: 20px 20px 0 0;
-        object-fit: cover;
+    }
+
+    .actimages {
+        align-items: center;
+        justify-content: center;
     }
 
     a.moyimages {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin-bottom: 20px;
+        margin-bottom: 5%;
+        max-width: 90%;
+        min-height: 230px;
+        max-height: 230px;
     }
     
     a.moyimages img {
-        width: 100%;
-        width: 350px;
-        max-height: 150px;
-        height: 100%;
+        min-width: 100%;
+        max-width: 100%;
     }
 
-    /*FOOTER*/
+    /*FOOTER MOBILE*/
     
     footer {
-        min-width: 480px;
         margin-left: -10px;
     }
     

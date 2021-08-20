@@ -35,6 +35,8 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+    padding: 0;
+    width: 35%;
 }
 
 nav img {
@@ -43,11 +45,16 @@ nav img {
 
 nav li {
     margin: 0 10px 0 20px;
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
 }
 
 a.bouton1 {
     text-decoration: none;
     color: black;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 a.bouton1:visited {
@@ -63,6 +70,10 @@ a.bouton1:hover {
 
 a.bouton1:active {
     color: #0065FC;
+}
+
+a.inscriremobile {
+    display: none;
 }
 
 a.inscrire {
@@ -516,6 +527,10 @@ VERSION MOBILE
         align-items: center;
     }
 
+    h1 {
+        margin-top: 30px;
+    }
+
     /*HEADER MOBILE*/
 
     header {
@@ -532,36 +547,66 @@ VERSION MOBILE
 
     nav img {
         max-width: 50%;
+        margin-left: 5%;
     }
 
     nav ul {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        align-content: center;
+        justify-content: center;
         min-width: 100%;
         max-width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    nav li {
+        margin: 0;
+        display: flex;
+        min-width: 50%;
     }
 
     a.bouton1 {
-        justify-content:space-between;
+        text-align: center;
         min-width: 100%;
         max-width: 100%;
         padding-bottom: 10px;
         border-bottom: #DEEBFF solid;
     }
 
-    a.bouton1:hover {
-        
+    a.bouton1:hover {   
+        border-top: none;
+        padding-top: 0;
         border-width: 2px;
-        padding-top: 30px;
+        padding-bottom: 10px;
         color: #0065FC;
+        border-color: #0065FC;
     }
 
     a.bouton1:active {
         border-bottom: #0065FC solid;
         border-width: 2px;
-        margin-bottom: 30px;
+        padding-bottom: 10px;
         color: #0065FC;
+    }
+
+    a.inscriremobile {
+        display: flex;
+        text-decoration: none;
+        font-weight: bold;
+        color: #0065FC;
+        margin-right: 5%;
+    }
+
+    a.inscriremobile:visited {
+        color: #0065FC;
+        font-size: bolder;
+    }
+
+    .inscrire {
+        display: none;
     }
 
     main {
@@ -712,6 +757,10 @@ VERSION MOBILE
         max-width: 100%;
         justify-content: space-around;
         margin: 0;
+    }
+
+    #entete i {
+        margin-top: 36px;
     }
 
     #popmobile {

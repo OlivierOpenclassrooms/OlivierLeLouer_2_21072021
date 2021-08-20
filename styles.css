@@ -110,7 +110,7 @@ main {
     outline: none;
 }
 
-#bouton {
+#boutonrecherche {
     background-color: #0065FC;
     float: left;
     color: white;
@@ -124,11 +124,12 @@ main {
     font-size: 14px;
 }
 
-#bouton:active {
-    box-shadow: inset 2px 2px white;
-    height: 40px;
-    width: 95px;
-    border-radius: 0 10px 7px 0;
+#boutonrecherche:active {
+    transform: scale(0.9);
+}
+
+#boutonmobile {
+    display: none;
 }
 
 /*Filtres*/
@@ -177,11 +178,11 @@ a.bouton2 {
 a.bouton2:hover {
     background-color: #0065FC;
     color: white;
+    transform: scale(1.1);
 }
 
-a.bouton2.i:hover {
-    background-color: #0065FC;
-    color: white;
+a.bouton2:active {
+    transform: scale(0.9);
 }
 
 #information {
@@ -191,13 +192,21 @@ a.bouton2.i:hover {
     margin-top: 30px;
 }
 
-#information i {
-    color: #0065FC;
-    border: 15px solid;
+#information div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
     border-color: #F2F2F2;
-    background-color: #DEEBFF;
     border-radius: 50%;
     margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+#information i {
+    color: #0065FC;
+    background-color:white;
 }
 
 /*Section hébergements et populaires*/
@@ -264,6 +273,14 @@ a.images img {
     border: white solid;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
+}
+
+a.images:hover {
+    transform: scale(1.1);
+}
+
+a.images:active {
+    transform: scale(0.9);
 }
 
 .description {
@@ -373,6 +390,14 @@ a.imagescote img {
     object-fit: cover;
 }
 
+a.imagescote:hover {
+    transform: scale(1.1);
+}
+
+a.imagescote:active {
+    transform: scale(0.9);
+}
+
 .etoilespop {
     margin-bottom: 3px;
     display: flex;
@@ -415,6 +440,14 @@ a.grandesimages img {
     object-fit: cover;
 }
 
+a.grandesimages:hover {
+    transform: scale(1.1);
+}
+
+a.grandesimages:active {
+    transform: scale(0.9);
+}
+
 .actimages {
     display: flex;
     flex-direction: column;
@@ -430,6 +463,14 @@ a.moyimages {
     text-decoration: none;
     color: black;
     box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+a.moyimages:hover {
+    transform: scale(1.1);
+}
+
+a.moyimages:active {
+    transform: scale(0.9);
 }
 
 a.moyimages img {
@@ -505,13 +546,21 @@ VERSION MOBILE
         justify-content:space-between;
         min-width: 100%;
         max-width: 100%;
-
+        padding-bottom: 10px;
+        border-bottom: #DEEBFF solid;
     }
 
     a.bouton1:hover {
-        border-bottom: #0065FC solid;
+        
         border-width: 2px;
         padding-top: 30px;
+        color: #0065FC;
+    }
+
+    a.bouton1:active {
+        border-bottom: #0065FC solid;
+        border-width: 2px;
+        margin-bottom: 30px;
         color: #0065FC;
     }
 
@@ -521,6 +570,8 @@ VERSION MOBILE
         width : 100%;
     }
 
+    /*SECTION RECHERCHE*/
+
     #recherche {
         max-width: 100%;
         display: flex;  
@@ -528,7 +579,34 @@ VERSION MOBILE
     }
 
     #barre {
-        width: 60%;
+        width: 70%;
+    }
+
+    #boutonrecherche {
+        display: none;
+    }
+    
+    #boutonmobile {
+        display: flex;
+        height: 46px;
+        width: 50px;
+        color: white;
+        border: 1px solid;
+        border-color: #0065FC;
+        background-color: #0065FC;
+        border-radius: 12px 12px 12px 12px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #boutonmobile i{
+        background-color: #0065FC;
+        border: 5px solid;
+        border-color: #0065FC;
+    }
+
+    #boutonmobile:active {
+        transform: scale(0.9);
     }
 
     /**FILTRES MOBILE**/
@@ -561,6 +639,11 @@ VERSION MOBILE
         min-width: 100%;
     }
 
+    #information div {
+        min-width: 25px;
+        min-height: 25px;
+    }
+
     /*Section hébergements et populaires MOBILE*/
 
     #propositions {
@@ -584,13 +667,15 @@ VERSION MOBILE
     }
 
     #presentation h1 {
-        margin-left: 0;
+        width: 100%;
+        margin-left: 15px;
         margin-bottom: 15px;
     }
 
     #presentation h3 {
-        margin-left: 0;
+        margin-left: 15px;
         margin-bottom: 0;
+        width: 100%;
     }
     
     #vignettes {

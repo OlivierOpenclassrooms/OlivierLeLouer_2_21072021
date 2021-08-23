@@ -30,11 +30,14 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between; 
+    width: 100%;
 }
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 
@@ -50,7 +53,6 @@ nav li {
 a.bouton1 {
     text-decoration: none;
     color: black;
-
 }
 
 a.bouton1:visited {
@@ -76,6 +78,7 @@ a.inscrire {
     text-decoration: none;
     font-weight: bold;
     color: #0065FC;
+    width: 100%;
 }
 
 a.inscrire:visited {
@@ -163,6 +166,7 @@ main {
 
 #filtres div {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -515,7 +519,7 @@ footer div p a {
 VERSION MOBILE
 *************************/
 
-@media all and (max-device-width: 480px)
+@media only screen and (max-width: 480px)
 {
 
     body {
@@ -638,6 +642,7 @@ VERSION MOBILE
         border-radius: 12px 12px 12px 12px;
         align-items: center;
         justify-content: center;
+        margin-left: -10%;
     }
 
     #boutonmobile i{
@@ -840,4 +845,187 @@ VERSION MOBILE
         margin-left: -10px;
     }
     
+}
+
+/*************************
+VERSION TABLETTE
+*************************/
+
+@media only screen and (min-width:480px) and (max-width:768px) {
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    /*Section hébergements et populaires TABLETTE*/
+
+    #propositions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    /**Hébergements TABLETTE**/
+
+    #presentation {
+        border-radius: 0 0 0 0;
+        border: 0;
+        background-color: white;
+        max-width: 100%;
+        min-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #presentation h1 {
+        width: 100%;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #presentation h3 {
+        margin-left: 70px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    
+    #vignettes {
+        max-width: 80%;
+        min-width: 80%;
+        height: auto;
+    }
+
+    a.images {
+        max-height: 400px;
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    a.images img {
+        max-height: 240px;
+        margin-bottom: 10px;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        border: white solid;
+        border-radius: 20px 20px 0 0;
+    }
+
+    /*Populaires TABLETTE*/
+
+    #populaires {
+        border-radius: 0 0 0 0;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    #entete {
+        min-width: 100%;
+        max-width: 100%;
+        justify-content: space-around;
+    }
+
+    #entete i {
+        margin-top:65px;
+        margin-left: 25%;
+    }
+
+    #popmobile {
+        margin-bottom: 5%;
+        min-width: 80%;
+        max-width: 80%;
+    }
+
+    a.imagescote {
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    a.imagescote img {
+        max-height: 100%;
+        max-width: 5%;
+    }
+
+    .descriptionpop {
+        margin-top: 5px;
+        max-width: 100%;
+        margin-left: 3%;
+    }
+
+    /*Activités TABLETTE*/
+
+    #sectionactivités {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    #sectionactivités h1 {
+        margin-left: 13px;
+    }
+
+    #activités {
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+    }
+
+    a.grandesimages {
+        max-width: none;
+        width: 80%;
+        height: auto;
+        margin-bottom: 5%;
+    }
+
+    a.grandesimages img {
+        width: 100%;
+        max-height: 300px;
+        height: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .actimages {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 80%;
+    }
+
+    a.moyimages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 5%;
+        max-width: none;
+        width: 48%;
+        min-height: 400px;
+        max-height: 400px;
+    }
+    
+    a.moyimages img {
+        min-height: 340px;
+        height: auto;
+        max-height: auto;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
 }

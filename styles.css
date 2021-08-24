@@ -103,7 +103,7 @@ main {
 }
 
 #recherche i {
-    border: 15px solid #F2F2F2;
+    border: 15px solid #f1f1f1;
     border-radius: 10px 0 0 10px;
     background-color: #F2F2F2;
     float: left;
@@ -126,7 +126,7 @@ main {
     height: 46px;
     width: 100px;
     border: 15px solid;
-    border-color: #0065FC;
+    border-color: #0064fa;
     border-radius: 0 10px 10px 0;
     border: #0065FC;
     font-weight: bold;
@@ -156,7 +156,7 @@ main {
     border: 10px solid;
     border-radius: 50%;
     border-color: #DEEBFF;
-    background-color: #DEEBFF;
+    background-color: #dde9fc;
 }
 
 #filtres p {
@@ -384,7 +384,7 @@ a.imagescote {
     display: flex;
     flex-direction: row;
     border: white solid;
-    background-color: white;
+    background-color:rgb(255, 255, 254);
     border-radius: 20px 20px 20px 20px;
     text-decoration: none;
     color: black;
@@ -647,7 +647,7 @@ VERSION MOBILE
         color: white;
         border: 1px solid;
         border-color: #0065FC;
-        background-color: #0065FC;
+        background-color: #0064fa;
         border-radius: 12px 12px 12px 12px;
         align-items: center;
         justify-content: center;

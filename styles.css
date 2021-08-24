@@ -46,7 +46,7 @@ nav img {
 }
 
 nav li {
-    margin: 0 10px 0 20px;
+    margin: 0 50px 0 20px;
     text-align: center;
 }
 
@@ -527,7 +527,7 @@ footer div p a {
 VERSION MOBILE
 *************************/
 
-@media only screen and (max-width: 480px)
+@media only screen and (max-width: 650px)
 {
 
     body {
@@ -869,9 +869,10 @@ VERSION MOBILE
 VERSION TABLETTE PORTRAIT
 *************************/
 
-@media only screen and (min-width:480px) and (max-width:768px) {
+@media only screen and (min-width:651px) and (max-width:768px) {
     header {
         padding: 10px;
+        margin-bottom: 0;
     }
 
     main {
@@ -1021,7 +1022,7 @@ VERSION TABLETTE PORTRAIT
 VERSION TABLETTE PAYSAGE
 *************************/
 
-@media only screen and (min-width:769px) and (max-width:1024px) {
+@media only screen and (min-width:769px) and (max-width:1500px) {
     
     header {
         padding: 10px;

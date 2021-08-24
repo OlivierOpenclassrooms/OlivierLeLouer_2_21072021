@@ -103,7 +103,7 @@ main {
 }
 
 #recherche i {
-    border: 15px solid #f1f1f1;
+    border: 15px solid transparent;
     border-radius: 10px 0 0 10px;
     background-color: #F2F2F2;
     float: left;
@@ -126,9 +126,8 @@ main {
     height: 46px;
     width: 100px;
     border: 15px solid;
-    border-color: #0064fa;
     border-radius: 0 10px 10px 0;
-    border: #0065FC;
+    border: transparent;
     font-weight: bold;
     font-size: 14px;
 }
@@ -155,8 +154,8 @@ main {
     color:#0065FC;
     border: 10px solid;
     border-radius: 50%;
-    border-color: #DEEBFF;
-    background-color: #dde9fc;
+    border-color: transparent;
+    background-color: #DEEBFF;
 }
 
 #filtres p {
@@ -259,8 +258,8 @@ a.images {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: white solid;
-    background-color:rgb(255, 255, 254);
+    border: transparent solid;
+    background-color: white;
     border-radius: 20px 20px 20px 20px;
     width: 100%;
     min-width: 300px;
@@ -383,8 +382,8 @@ a.images:active {
 a.imagescote {
     display: flex;
     flex-direction: row;
-    border: white solid;
-    background-color:rgb(255, 255, 254);
+    border: transparent solid;
+    background-color: white;
     border-radius: 20px 20px 20px 20px;
     text-decoration: none;
     color: black;
@@ -646,8 +645,8 @@ VERSION MOBILE
         width: 50px;
         color: white;
         border: 1px solid;
-        border-color: #0065FC;
-        background-color: #0064fa;
+        border-color: transparent;
+        background-color: #0065FC;
         border-radius: 12px 12px 12px 12px;
         align-items: center;
         justify-content: center;
@@ -657,7 +656,7 @@ VERSION MOBILE
     #boutonmobile i{
         background-color: #0065FC;
         border: 5px solid;
-        border-color: #0064Fa;
+        border-color: transparent;
     }
 
     #boutonmobile:active {

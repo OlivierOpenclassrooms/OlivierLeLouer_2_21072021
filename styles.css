@@ -18,8 +18,8 @@ h3 {
 /*HEADER*/
 
 header {
-    padding-right: 150px;
-    padding-left: 150px;
+    padding-right: 50px;
+    padding-left: 50px;
     margin-bottom: 3%;
     margin-top: 1%;
 }
@@ -90,8 +90,8 @@ a.inscrire:visited {
 /*Section recherche*/
 
 main {
-    padding-right: 150px;
-    padding-left: 150px;
+    padding-right: 50px;
+    padding-left: 50px;
     object-fit: contain;
 }
 
@@ -239,11 +239,11 @@ a.bouton2:active {
 }
 
 #presentation h1 {
-    margin-left: 4%;
+    margin-left: 9%;
 }
 
 #presentation h3 {
-    margin-left: 4%;
+    margin-left: 9%;
     margin-bottom: 5%;
 }
 
@@ -508,7 +508,8 @@ footer {
 }
 
 footer div {
-    padding-left: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-right: 10%;
     margin-top: 1.5%;
     margin-bottom: 1.5%;
@@ -864,11 +865,6 @@ VERSION MOBILE
     footer {
         margin-left: -10px;
     }
-
-    footer div {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
     
 }
 
@@ -1023,13 +1019,6 @@ VERSION TABLETTE PORTRAIT
         max-width: 80%;
     }
 
-    /*FOOTER TABLETTE PORTRAIT*/
-
-    footer div {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
 }
 
 /*************************
@@ -1112,12 +1101,5 @@ VERSION TABLETTE PAYSAGE
         .actimages {
             width: 40%;
         }
-
-    /*FOOTER TABLETTE PAYSAGE*/
-
-    footer div {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
         
 }

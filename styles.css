@@ -18,8 +18,8 @@ h3 {
 /*HEADER*/
 
 header {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 150px;
+    padding-left: 150px;
     margin-bottom: 3%;
     margin-top: 1%;
 }
@@ -35,7 +35,7 @@ nav {
 
 nav ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -46,13 +46,13 @@ nav img {
 }
 
 nav li {
-    margin: 0 50px 0 20px;
     text-align: center;
 }
 
 a.bouton1 {
     text-decoration: none;
     color: black;
+    padding: 37px;
 }
 
 a.bouton1:visited {
@@ -62,7 +62,7 @@ a.bouton1:visited {
 a.bouton1:hover {
     border-top: #0065FC solid;
     border-width: 2px;
-    padding-top: 30px;
+    padding: 37px;
     color: #0065FC;
 }
 
@@ -79,6 +79,7 @@ a.inscrire {
     font-weight: bold;
     color: #0065FC;
     width: 100%;
+    padding: 30px;
 }
 
 a.inscrire:visited {
@@ -89,8 +90,8 @@ a.inscrire:visited {
 /*Section recherche*/
 
 main {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 150px;
+    padding-left: 150px;
     object-fit: contain;
 }
 
@@ -234,14 +235,15 @@ a.bouton2:active {
     background-color:#F2F2F2;
     border-radius: 20px 20px 20px 20px;
     margin-right: 2%;
+    width: 70%;
 }
 
 #presentation h1 {
-    margin-left: 9%;
+    margin-left: 4%;
 }
 
 #presentation h3 {
-    margin-left: 9%;
+    margin-left: 4%;
     margin-bottom: 5%;
 }
 
@@ -251,7 +253,6 @@ a.bouton2:active {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 
 a.images {
@@ -261,10 +262,9 @@ a.images {
     border: transparent solid;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    width: 100%;
-    min-width: 300px;
     min-height: 224px;
     max-height: 236px;
+    min-width: 300px;
     max-width: 300px;
     text-decoration: none;
     color: black;
@@ -318,7 +318,7 @@ a.images:active {
     display: flex;
     flex-direction: row;
     position: absolute;
-    bottom: 5px; 
+    bottom: 5px;
 }
 
 .etoilespleines {
@@ -338,7 +338,7 @@ a.images:active {
     flex-direction: column;
     background-color:#F2F2F2;
     align-items: center;
-    width: 50%;
+    width: 30%;
     border-radius: 20px 20px 20px 20px;
     min-width: 350px;
 }
@@ -442,8 +442,7 @@ a.grandesimages {
     border-radius: 20px 20px 20px 20px;
     text-decoration: none;
     color: black;
-    width : 22%;
-    min-width: 360px;
+    width : 23%;
     margin-bottom: 50px;
     object-fit: cover;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -469,8 +468,7 @@ a.grandesimages:active {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 22%;
-    min-width: 360px;
+    width: 23%;
     height: 550px;
     margin-bottom: 50px;
 }
@@ -482,7 +480,6 @@ a.moyimages {
     text-decoration: none;
     color: black;
     max-height: 250px;
-    min-width: 360px;
     box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -511,8 +508,7 @@ footer {
 }
 
 footer div {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-left: 150px;
     margin-right: 10%;
     margin-top: 1.5%;
     margin-bottom: 1.5%;
@@ -521,6 +517,10 @@ footer div {
 footer div p a {
     text-decoration: none;
     color: black;
+}
+
+footer div p a:hover {
+    text-decoration: underline;
 }
 
 /*************************
@@ -580,6 +580,7 @@ VERSION MOBILE
         text-align: center;
         min-width: 100%;
         max-width: 100%;
+        padding: 0;
         padding-bottom: 10px;
         border-bottom: #DEEBFF solid;
     }
@@ -588,6 +589,7 @@ VERSION MOBILE
         border-top: none;
         padding-top: 0;
         border-width: 2px;
+        padding: 0;
         padding-bottom: 10px;
         color: #0065FC;
         border-color: #0065FC;
@@ -623,7 +625,7 @@ VERSION MOBILE
         width : 100%;
     }
 
-    /*SECTION RECHERCHE*/
+    /*SECTION RECHERCHE MOBILE*/
 
     #recherche {
         max-width: 100%;
@@ -650,7 +652,7 @@ VERSION MOBILE
         border-radius: 12px 12px 12px 12px;
         align-items: center;
         justify-content: center;
-        margin-left: -10%;
+        margin-left: -4%;
     }
 
     #boutonmobile i{
@@ -869,7 +871,7 @@ VERSION MOBILE
 VERSION TABLETTE PORTRAIT
 *************************/
 
-@media only screen and (min-width:651px) and (max-width:768px) {
+@media only screen and (min-width:651px) and (max-width:800px) {
     header {
         padding: 10px;
         margin-bottom: 0;
@@ -1022,7 +1024,7 @@ VERSION TABLETTE PORTRAIT
 VERSION TABLETTE PAYSAGE
 *************************/
 
-@media only screen and (min-width:769px) and (max-width:1500px) {
+@media only screen and (min-width:801px) and (max-width:1500px) {
     
     header {
         padding: 10px;
@@ -1091,4 +1093,12 @@ VERSION TABLETTE PAYSAGE
             justify-content: space-evenly;
         }
 
+        a.grandesimages {
+            width: 40%;
+        }
+
+        .actimages {
+            width: 40%;
+        }
+        
 }

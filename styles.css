@@ -959,9 +959,70 @@ VERSION TABLETTE PORTRAIT
 
 @media only screen and (min-width:481px) and (max-width:768px) {
     header {
-        padding: 10px;
-        margin-bottom: 0;
-        width: 80%;
+        padding: 0;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    nav {
+        min-width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    nav img {
+        max-width: 50%;
+        margin-left: 5%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        order: 1;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    nav li {
+        margin: 0;
+        display: flex;
+        min-width: 50%;
+    }
+
+    a.inscrire {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    a.bouton1 {
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+        padding-bottom: 10px;
+        border-bottom: #DEEBFF solid;
+    }
+
+    a.bouton1:hover {   
+        border-top: none;
+        padding-top: 0;
+        border-width: 2px;
+        padding: 0;
+        padding-bottom: 10px;
+        color: #0065FC;
+        border-color: #0065FC;
+    }
+
+    a.bouton1:active {
+        border-bottom: #0065FC solid;
+        border-width: 2px;
+        padding-bottom: 10px;
+        color: #0065FC;
     }
 
     main {

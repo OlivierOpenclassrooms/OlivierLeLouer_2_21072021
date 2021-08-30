@@ -188,6 +188,7 @@ a.bouton2 {
     text-decoration: none;
     color: black;
     margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 a.bouton2 p {
@@ -698,7 +699,7 @@ VERSION MOBILE
         margin-left: -4%;
     }
 
-    #boutonrecherche p{
+    #boutonrecherche span{
         display: none;
     }
 

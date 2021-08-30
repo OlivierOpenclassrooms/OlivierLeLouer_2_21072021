@@ -564,6 +564,7 @@ footer .wrapper {
 
 footer .wrapper div {
     width: 23%;
+    padding: 10px;
 }
 
 footer div p a {
@@ -945,6 +946,10 @@ VERSION MOBILE
         margin-left: 18px;
     }
 
+    footer .wrapper div {
+        padding: 0;
+    }
+
     footer .wrapper p {
         display: flex;
         width: 230px;
@@ -1239,6 +1244,7 @@ VERSION TABLETTE PORTRAIT
 
     footer .wrapper div {
         min-width: 400px;
+        padding: 0;
     }
 
     footer .wrapper p {
@@ -1344,6 +1350,7 @@ VERSION TABLETTE PAYSAGE
     
         footer .wrapper div {
             min-width: 300px;
+            padding: 0;
         }
         
 }

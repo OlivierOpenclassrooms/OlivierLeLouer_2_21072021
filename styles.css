@@ -101,6 +101,8 @@ a.inscrire:visited {
     border-radius: 10px 0 0 10px;
     background-color: #F2F2F2;
     float: left;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 #barre {
@@ -111,6 +113,8 @@ a.inscrire:visited {
     border: #F2F2F2 solid;
     border-width: 1px;
     outline: none;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 
 #boutonrecherche {
@@ -255,8 +259,8 @@ a.images {
     text-decoration: none;
     color: black;
     box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    width: 31%;
-    height: 45%;
+    width: 30%;
+    height: 43%;
 }
 
 a.images img {
@@ -279,9 +283,10 @@ a.images:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 90%;
-    height: 40%;
+    width: 97%;
+    height: 39%;
     padding: 5px;
+    margin-left: 5px;
 }
 
 .description p {
@@ -364,6 +369,7 @@ a.images:active {
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 
@@ -413,7 +419,8 @@ a.imagescote:active {
     width: 100%;
 }
 
-#activités h3 {
+#activités p {
+    font-weight: bolder;
     margin-left: 20px;
 }
 

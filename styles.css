@@ -8,7 +8,7 @@ main {
 }
 
 .wrapper {
-    max-width: 1024px;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -54,8 +54,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    min-width: none;
-    width: 75%;
+    width: 85%;
 }
 
 nav li {
@@ -127,6 +126,7 @@ a.inscrire:visited {
     outline: none;
     padding-left: 20px;
     padding-right: 10px;
+    font-weight: 600;
 }
 
 #boutonrecherche {
@@ -192,7 +192,6 @@ a.bouton2 {
     text-decoration: none;
     color: black;
     margin-left: 20px;
-    margin-bottom: 15px;
 }
 
 a.bouton2 p {
@@ -331,6 +330,7 @@ a.images:active {
     flex-direction: row;
     flex-wrap: nowrap;
     bottom: 0;
+    margin-top: 5px;
 }
 
 .etoilespleines {
@@ -736,9 +736,8 @@ VERSION MOBILE
     }
 
     a.bouton2{
-        margin-bottom: 3%;
+        margin-bottom: 15px;
         margin-left: 5px;
-        
     }
 
     #information {
@@ -1046,6 +1045,12 @@ VERSION TABLETTE PORTRAIT
         min-width: 95%;
     }
 
+    /*FILTRES TABLETTE PORTRAIT*/
+
+    a.bouton2{
+        margin-bottom: 15px;
+    }
+
     /*Section hébergements et populaires PORTRAIT*/
 
     #propositions {
@@ -1351,6 +1356,5 @@ VERSION TABLETTE PAYSAGE
         footer .wrapper div {
             min-width: 300px;
             padding: 0;
-        }
-        
+        }  
 }

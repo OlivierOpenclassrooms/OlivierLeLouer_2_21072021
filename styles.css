@@ -89,9 +89,6 @@ a.inscrire:visited {
 
 /*Section recherche*/
 
-
-
-
 #recherche {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -133,7 +130,7 @@ a.inscrire:visited {
     transform: scale(0.9);
 }
 
-#boutonmobile {
+#boutonrecherche i {
     display: none;
 }
 
@@ -623,10 +620,6 @@ VERSION MOBILE
     }
 
     #boutonrecherche {
-        display: none;
-    }
-    
-    #boutonmobile {
         display: flex;
         height: 46px;
         width: 50px;
@@ -640,14 +633,15 @@ VERSION MOBILE
         margin-left: -4%;
     }
 
-    #boutonmobile i{
+    #boutonrecherche p{
+        display: none;
+    }
+
+    #boutonrecherche i{
+        display: block;
         background-color: #0065FC;
         border: 5px solid;
         border-color: transparent;
-    }
-
-    #boutonmobile:active {
-        transform: scale(0.9);
     }
 
     /**FILTRES MOBILE**/

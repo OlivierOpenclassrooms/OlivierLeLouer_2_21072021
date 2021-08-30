@@ -334,11 +334,21 @@ a.images:active {
 }
 
 .etoilespleines {
+    display: flex;
+    flex-wrap: nowrap;
     color: #0065FC;
 }
 
+.etoilespleines i {
+    margin-left: 3px;
+}
+
 .etoilesvides {
+    display: flex;
     color: rgb(194, 193, 193);
+}
+
+.etoilesvides i {
     margin-left: 3px;
 }
 

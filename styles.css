@@ -3,19 +3,24 @@ body {
     margin: 0;
 }
 
+main {
+    padding: 10px;
+}
+
 .wrapper {
-    max-width: 1024px;
+    max-width: 1440px;
     margin: auto;
 }
 
 h1 {
     margin-bottom: 0;
-    margin-top: 40px;
+    margin-top: 20px;
     
 }
 
 h2 {
-    margin-top: 0;
+    margin-bottom: 30px;
+
 }
 
 h3 {
@@ -25,7 +30,7 @@ h3 {
 /*HEADER*/
 
 header {
-    padding-top: 18px;
+    padding: 10px;
 }
 
 nav {
@@ -56,7 +61,7 @@ nav li {
 a.bouton1 {
     text-decoration: none;
     color: black;
-    padding: 37px;
+    padding: 29px;
 }
 
 a.bouton1:visited {
@@ -66,7 +71,7 @@ a.bouton1:visited {
 a.bouton1:hover {
     border-top: #0065FC solid;
     border-width: 2px;
-    padding: 37px;
+    padding: 29px;
     color: #0065FC;
 }
 
@@ -83,7 +88,7 @@ a.inscrire {
     font-weight: bold;
     color: #0065FC;
     width: 100%;
-    padding: 30px;
+    padding: 29px;
 }
 
 a.inscrire:visited {
@@ -240,11 +245,12 @@ a.bouton2:active {
 #presentation {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     background-color:#F2F2F2;
     border-radius: 20px 20px 20px 20px;
-    margin-right: 25px;
+    margin-right: 20px;
     width: 75%;
-    padding: 25px;
+    padding: 20px;
 }
 
 #vignettes {
@@ -259,23 +265,25 @@ a.images {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: transparent solid;
+    align-items: center;
+    border: transparent solid 4px;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     text-decoration: none;
     color: black;
     box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    width: 30.5%;
-    height: 43%;
-    padding-bottom: 5px;
+    width: 31%;
+    height: 45%;
+    box-sizing:content-box;
 }
 
 a.images img {
-    width: 98%;
+    width: 100%;
     height: 60%;
     border: white solid;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
+    border: 0;
 }
 
 a.images:hover {
@@ -291,7 +299,7 @@ a.images:active {
     flex-direction: column;
     justify-content: space-between;
     width: 97%;
-    height: 40%;
+    box-sizing: border-box;
     padding : 5px;
     margin-left: 5px;
 }
@@ -333,8 +341,9 @@ a.images:active {
     text-decoration: none;
     color: black;
     font-weight: bolder;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
 }
 
 /*Populaires*/
@@ -347,7 +356,7 @@ a.images:active {
     align-items: center;
     width: 30%;
     border-radius: 20px 20px 20px 20px;
-    padding: 25px;
+    padding: 20px;
 }
 
 .descriptionpop {
@@ -387,13 +396,13 @@ a.images:active {
 a.imagescote {
     display: flex;
     flex-direction: row;
-    border: transparent solid;
+    border: transparent solid 1px;
     background-color: white;
     margin-bottom: 20px;
     border-radius: 20px 20px 20px 20px;
     text-decoration: none;
     color: black;
-    width: 98%;
+    width: 100%;
     min-height: 30%;
     box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -1049,7 +1058,7 @@ VERSION TABLETTE PORTRAIT
 VERSION TABLETTE PAYSAGE
 *************************/
 
-@media only screen and (min-width:801px) and (max-width:1500px) {
+@media only screen and (min-width:769px) and (max-width:1023px) {
     
     header {
         padding: 10px;

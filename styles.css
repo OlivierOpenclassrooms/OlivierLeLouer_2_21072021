@@ -446,6 +446,12 @@ a.imagescote:active {
 
 /*Activités*/
 
+#sectionactivités {
+    display: flex;
+    flex-direction: column;
+}
+
+
 #activités {
     display: flex;
     flex-wrap: wrap;

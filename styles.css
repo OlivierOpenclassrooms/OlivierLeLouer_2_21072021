@@ -1,0 +1,1366 @@
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+main {
+    padding: 10px;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 30px;
+
+}
+
+h3 {
+    margin-bottom: 25px;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+
+header img {
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end ;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 85%;
+}
+
+nav li {
+    text-align: center;
+}
+
+a.bouton1 {
+    text-decoration: none;
+    color: black;
+    padding: 37px;
+}
+
+a.bouton1:visited {
+    color: black;
+}
+
+a.bouton1:hover {
+    border-top: #0065FC solid;
+    border-width: 2px;
+    padding: 37px;
+    color: #0065FC;
+}
+
+a.bouton1:active {
+    color: #0065FC;
+}
+
+a.inscriremobile {
+    display: none;
+}
+
+a.inscrire {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0065FC;
+    padding: 29px;
+}
+
+a.inscrire:visited {
+    color: #0065FC;
+    font-weight: bolder;
+}
+
+/*Section recherche*/
+
+#recherche {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;  
+    flex-wrap: nowrap;
+}
+
+#recherche i {
+    border: 15px solid transparent;
+    border-radius: 10px 0 0 10px;
+    background-color: #F2F2F2;
+    float: left;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#barre {
+    font-size: 20px;
+    float: left;
+    color: black;
+    height: 46px;
+    border: #F2F2F2 solid;
+    border-width: 1px;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+#boutonrecherche {
+    background-color: #0065FC;
+    float: left;
+    color: white;
+    height: 46px;
+    width: 100px;
+    border: 15px solid;
+    border-radius: 0 10px 10px 0;
+    border: transparent;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#boutonrecherche:active {
+    transform: scale(0.9);
+}
+
+#boutonrecherche i {
+    display: none;
+}
+
+/*Filtres*/
+
+#filtres {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+#filtres i {
+    margin-left: -3px;
+    color:#0065FC;
+    border: 10px solid;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #DEEBFF;
+}
+
+#filtres p {
+    font-weight: bolder;
+}
+
+#filtres div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#filtres h2 {
+    margin: 0 15px 0 10px;
+}
+a.bouton2 {
+    display: flex;
+    align-items: center;
+    border: black solid 1px;
+    border-radius: 20px 20px 20px 20px;
+    border-color: #DEEBFF ;
+    border-left-color: transparent;
+    height: 35px;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+a.bouton2 p {
+    padding: 15px;
+}
+
+a.bouton2:hover {
+    background-color: #0065FC;
+    color: white;
+    transform: scale(1.1);
+}
+
+a.bouton2:active {
+    transform: scale(0.9);
+}
+
+#information {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#information div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-color: #F2F2F2;
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+#information i {
+    color: #0065FC;
+    background-color:white;
+}
+
+/*Section hébergements et populaires*/
+
+#propositions {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 35px;
+}
+
+/*Hébergements*/
+
+#presentation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color:#F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 20px;
+    width: 75%;
+    padding: 20px;
+}
+
+#vignettes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 450px;
+}
+
+a.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: transparent solid 4px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 31%;
+    height: 45%;
+    box-sizing:content-box;
+}
+
+a.images img {
+    width: 100%;
+    height: 60%;
+    border: white solid;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    border: 0;
+}
+
+a.images:hover {
+    transform: scale(1.05);
+}
+
+a.images:active {
+    transform: scale(0.9);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 97%;
+    box-sizing: border-box;
+    padding : 5px;
+    margin-left: 5px;
+}
+
+.description p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.description span {
+    font-weight: bold;
+}
+
+.titrehébergement {
+    font-weight: bolder;
+}
+
+#presentation h3 a {
+    text-decoration: none;
+    color: black;
+}
+ 
+.etoiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    bottom: 0;
+    margin-top: 5px;
+}
+
+.etoilespleines {
+    display: flex;
+    flex-wrap: nowrap;
+    color: #0065FC;
+}
+
+.etoilespleines i {
+    margin-left: 3px;
+}
+
+.etoilesvides {
+    display: flex;
+    color: rgb(194, 193, 193);
+}
+
+.etoilesvides i {
+    margin-left: 3px;
+}
+
+.plus {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+}
+
+/*Populaires*/
+
+#populaires {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color:#F2F2F2;
+    align-items: center;
+    width: 30%;
+    border-radius: 20px 20px 20px 20px;
+    padding: 20px;
+}
+
+.descriptionpop {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.descriptionpop p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+#entete {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#entete i{
+    margin-bottom: 10px;
+}
+
+#popmobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+a.imagescote {
+    display: flex;
+    flex-direction: row;
+    border: transparent solid 1px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    min-height: 30%;
+    box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+a.imagescote img {
+    width: 40%;
+    border: white solid;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+
+a.imagescote:hover {
+    transform: scale(1.05);
+}
+
+a.imagescote:active {
+    transform: scale(0.9);
+}
+
+.etoilespop {
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+}
+
+/*Activités*/
+
+#sectionactivités {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#activités {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+#activités p {
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+a.grandesimages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: black;
+    width : 23%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+a.grandesimages img {
+    width: 100%;
+    height: 89.6%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+a.grandesimages:hover {
+    transform: scale(1.05);
+}
+
+a.grandesimages:active {
+    transform: scale(0.9);
+}
+
+.actimages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 23%;
+    height: 100%;
+}
+
+a.petitesimages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: black;
+    height: 38%;
+    box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+a.petitesimages:hover {
+    transform: scale(1.05);
+}
+
+a.petitesimages:active {
+    transform: scale(0.9);
+}
+
+a.petitesimages img {
+    width: 100%;
+    height: 73%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+a.moyimages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: black;
+    height: 55%;
+    box-shadow: 0 0 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+a.moyimages:hover {
+    transform: scale(1.05);
+}
+
+a.moyimages:active {
+    transform: scale(0.9);
+}
+
+a.moyimages img {
+    width: 100%;
+    height: 81%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #F2F2F2;
+    padding-bottom: 20px;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .wrapper div {
+    width: 23%;
+    padding: 10px;
+}
+
+footer div p a {
+    text-decoration: none;
+    color: black;
+}
+
+footer div p a:hover {
+    text-decoration: underline;
+}
+
+/*************************
+VERSION MOBILE
+*************************/
+
+@media only screen and (max-width: 480px)
+{
+
+    body {
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+        margin-top: 30px;
+    }
+
+    /*HEADER MOBILE*/
+
+    header {
+        padding: 0;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    nav {
+        min-width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    nav img {
+        max-width: 50%;
+        margin-left: 5%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        order: 1;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    nav li {
+        margin: 0;
+        display: flex;
+        min-width: 50%;
+    }
+
+    a.inscrire {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    a.bouton1 {
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+        padding-bottom: 10px;
+        border-bottom: #DEEBFF solid;
+    }
+
+    a.bouton1:hover {   
+        border-top: none;
+        padding-top: 0;
+        border-width: 2px;
+        padding: 0;
+        padding-bottom: 10px;
+        color: #0065FC;
+        border-color: #0065FC;
+    }
+
+    a.bouton1:active {
+        border-bottom: #0065FC solid;
+        border-width: 2px;
+        padding-bottom: 10px;
+        color: #0065FC;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    /*SECTION RECHERCHE MOBILE*/
+
+    #trouver {
+        max-width: 95%;
+        min-width: 95%;
+    }
+
+    #recherche {
+        max-width: 100%;
+        display: flex;  
+        flex-wrap: nowrap;
+    }
+
+    #barre {
+        width: 70%;
+    }
+
+    #boutonrecherche {
+        display: flex;
+        height: 46px;
+        width: 50px;
+        color: white;
+        border: 1px solid;
+        border-color: transparent;
+        background-color: #0065FC;
+        border-radius: 12px 12px 12px 12px;
+        align-items: center;
+        justify-content: center;
+        margin-left: -4%;
+    }
+
+    #boutonrecherche span{
+        display: none;
+    }
+
+    #boutonrecherche i{
+        display: block;
+        background-color: #0065FC;
+        border: 5px solid;
+        border-color: transparent;
+    }
+
+    /**FILTRES MOBILE**/
+
+    #titre {
+        min-width: 100%;
+    }
+
+    #filtres {
+        display: flex;
+        min-width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #filtres div {
+        min-width: 100%;
+        max-width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    a.bouton2{
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+
+    #information {
+        min-width: 100%;
+    }
+
+    #information div {
+        min-width: 25px;
+        min-height: 25px;
+    }
+
+    /*Section hébergements et populaires MOBILE*/
+
+    #propositions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 95%;
+    }
+
+    /**Hébergements MOBILE**/
+
+    #presentation {
+        border-radius: 0 0 0 0;
+        padding: 0;
+        background-color: white;
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0;
+    }
+
+    #presentation h1 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #presentation h3 {
+        margin-left: 15px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    
+    #vignettes {
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a.images {
+        height: auto;
+        max-width: 95%;
+        min-width: 95%;
+        margin: 0;
+        max-height: 215px;
+        height: 215px;
+        margin-bottom: 20px;
+    }
+
+    a.images img {
+        width: 100%;
+        height: 30%;
+        height: 125px;
+        max-height: 125px;
+        border: white solid;
+        border-radius: 20px 20px 0 0;
+    }
+
+    /*Populaires MOBILE*/
+
+    #populaires {
+        padding: 0;
+        border-radius: 0 0 0 0;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #entete {
+        min-width: 95%;
+        max-width: 95%;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    #popmobile {
+        margin-bottom: 5%;
+        min-width: 95%;
+        max-width: 95%;
+    }
+
+    a.imagescote {
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0px;
+        min-height: 180px;
+        max-height: 180px;
+    }
+
+    a.imagescote img {
+        max-height: 60%;
+        max-width: 50%;
+    }
+
+    .descriptionpop {
+        max-width: 100%;
+        margin-left: 3%;
+    }
+
+    /*Activités MOBILE*/
+
+    #sectionactivités {
+        min-width: 95%;
+        max-width: 95%;
+        margin: 0;
+    }
+
+    #sectionactivités h1 {
+        margin-left: 13px;
+    }
+
+    #activités {
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    a.grandesimages {
+        min-width: 95%;
+        max-width: 95%;
+        min-height: 208px;
+        max-height: 208px;
+        height: 208px;
+        margin-bottom: 5%;
+    }
+
+    a.grandesimages img {
+        width: 100%;
+        max-height: 160px;
+        height: 160px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .actimages {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        height: 465px;
+        min-width: 95%;
+        max-width: 95%;
+    }
+
+    a.petitesimages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 20px;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 208px;
+        max-height: 208px;
+    }
+
+    a.petitesimages img{
+        min-width: 100%;
+        max-width: 100%;
+        height: 78%;
+    }
+
+
+    a.moyimages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 20px;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 208px;
+        max-height: 208px;
+    }
+    
+    a.moyimages img {
+        min-width: 100%;
+        max-width: 100%;
+        height: 78%;
+    }
+
+    /*FOOTER MOBILE*/
+
+    footer h3 {
+        width: 230px;
+    }
+
+    footer .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-left: 18px;
+    }
+
+    footer .wrapper div {
+        padding: 0;
+    }
+
+    footer .wrapper p {
+        display: flex;
+        width: 230px;
+        min-width: 100%;
+    }
+    
+}
+
+/*************************
+VERSION TABLETTE PORTRAIT
+*************************/
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+    header {
+        padding: 0;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    nav {
+        min-width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    nav img {
+        max-width: 50%;
+        margin-left: 5%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        order: 1;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    nav li {
+        margin: 0;
+        display: flex;
+        min-width: 50%;
+    }
+
+    a.inscrire {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    a.bouton1 {
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+        padding-bottom: 10px;
+        border-bottom: #DEEBFF solid;
+    }
+
+    a.bouton1:hover {   
+        border-top: none;
+        padding-top: 0;
+        border-width: 2px;
+        padding: 0;
+        padding-bottom: 10px;
+        color: #0065FC;
+        border-color: #0065FC;
+    }
+
+    a.bouton1:active {
+        border-bottom: #0065FC solid;
+        border-width: 2px;
+        padding-bottom: 10px;
+        color: #0065FC;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        min-width: 80%;
+        width: 80%;
+        max-width: 80%;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    #trouver {
+        max-width: 95%;
+        min-width: 95%;
+    }
+
+    /*FILTRES TABLETTE PORTRAIT*/
+
+    a.bouton2{
+        margin-bottom: 15px;
+    }
+
+    /*Section hébergements et populaires PORTRAIT*/
+
+    #propositions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 95%;
+    }
+
+    /*Hébergements PORTRAIT*/
+
+    #presentation {
+        border-radius: 0 0 0 0;
+        padding: 0;
+        background-color: white;
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0;
+    }
+
+    #presentation h1 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #presentation h3 {
+        margin-left: 15px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    
+    #vignettes {
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a.images {
+        height: auto;
+        max-width: 95%;
+        min-width: 95%;
+        margin: 0;
+        max-height: 280px;
+        height: 280px;
+        margin-bottom: 20px;
+    }
+
+    a.images img {
+        width: 100%;
+        height: 30%;
+        height: 200px;
+        max-height: 200px;
+        border: white solid;
+        border-radius: 20px 20px 0 0;
+    }
+
+    /*Populaires PORTRAIT*/
+
+    #populaires {
+        padding: 0;
+        border-radius: 0 0 0 0;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #entete {
+        min-width: 95%;
+        max-width: 95%;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    #popmobile {
+        margin-bottom: 5%;
+        min-width: 95%;
+        max-width: 95%;
+    }
+
+    a.imagescote {
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0px;
+        min-height: 180px;
+        max-height: 180px;
+    }
+
+    a.imagescote img {
+        max-height: 60%;
+        max-width: 50%;
+    }
+
+    .descriptionpop {
+        max-width: 100%;
+        margin-left: 3%;
+    }
+
+    /*Activités PORTRAIT*/
+
+    #sectionactivités {
+        min-width: 95%;
+        max-width: 95%;
+        margin: 0;
+    }
+
+    #sectionactivités h1 {
+        margin-left: 13px;
+    }
+
+    #activités {
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    a.grandesimages {
+        min-width: 95%;
+        max-width: 95%;
+        min-height: 280px;
+        max-height: 280px;
+        height: 208px;
+        margin-bottom: 3%;
+    }
+
+    a.grandesimages img {
+        width: 100%;
+        max-height: 218px;
+        height: 218px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .actimages {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        height: 600px;
+        min-width: 95%;
+        max-width: 95%;
+    }
+
+    a.petitesimages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 20px;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 280px;
+        max-height: 280px;
+    }
+
+    a.petitesimages img{
+        min-width: 100%;
+        max-width: 100%;
+        height: 78%;
+    }
+
+
+    a.moyimages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 20px;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 280px;
+        max-height: 280px;
+    }
+    
+    a.moyimages img {
+        min-width: 100%;
+        max-width: 100%;
+        height: 78%;
+    }
+
+    /*FOOTER PORTRAIT*/
+
+    footer h3 {
+        width: 230px;
+    }
+
+    footer .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 97%;
+        margin-left: 110px;
+    }
+
+    footer .wrapper div {
+        min-width: 400px;
+        padding: 0;
+    }
+
+    footer .wrapper p {
+        display: flex;
+        width: 230px;
+        min-width: 100%;
+    }
+    
+}
+
+/*************************
+VERSION TABLETTE PAYSAGE
+*************************/
+
+@media only screen and (min-width:769px) and (max-width:1023px) {
+    
+    header {
+        padding: 10px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+        /*Section hébergements et populaires TABLETTE PAYSAGE*/
+
+        #propositions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+
+        /*Hébergements TABLETTE PAYSAGE*/
+
+        #presentation {
+            margin : 0;
+            width: 95%;
+        }
+
+        #presentation h3 {
+            margin-left: 15%;
+        }
+
+        /*Populaires TABLETTE PAYSAGE*/
+
+        #populaires {
+            display: flex;
+            flex-wrap: wrap;
+            background-color:#F2F2F2;
+            align-items: center;
+            width: 95%;
+            border-radius: 0;
+            margin-bottom: 5%;
+        }
+
+        #popmobile {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 95%;
+            margin-bottom: 2%;
+        }
+
+        a.imagescote {
+            margin-top: 0;
+            width: 30%;
+        }
+
+        /*Section activités TABLETTE PAYSAGE*/
+
+        #activit {
+            margin-left: 3%;
+        }
+
+
+
+        #activités {
+            justify-content: space-evenly;
+            height: 1000px;
+            margin-bottom: 0;
+            width: 100%;
+        }
+
+        a.grandesimages {
+            width: 45%;
+            height: 46%;
+        }
+
+        .actimages {
+            width: 45%;
+            height: 46%;
+        }
+
+        /*FOOTER TABLETTE*/
+
+        footer .wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 97%;
+            margin-left: 50px;
+        }
+    
+        footer .wrapper div {
+            min-width: 300px;
+            padding: 0;
+        }  
+}
